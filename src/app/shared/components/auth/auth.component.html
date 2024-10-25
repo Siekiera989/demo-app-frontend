@@ -1,1 +1,39 @@
-<p>auth works!</p>
+<div class="container centered login">
+  <p-card header="Login">
+    <div class="grid-center gap-05 input">
+      <label for="username">Username</label>
+      <input pInputText id="username" aria-describedby="username-help" />
+      <small id="username-help"> Enter your username or email </small>
+    </div>
+
+    <div class="grid-center gap-05">
+      <p-password [feedback]="false" />
+      <a>Forgotten password?</a>
+    </div>
+
+    <div class="grid-center gap-2 mt-25">
+      <p-button label="Login" [rounded]="true" />
+    </div>
+
+    <!-- Login with Google Button -->
+    <div class="grid-center gap-2 mt-25">
+      <p-button label="Login with Google" [rounded]="true">
+        <a href="#" class="google-btn">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+            alt="Google logo"
+          /> </a
+      ></p-button>
+    </div>
+
+    <!-- Login with Apple ID Button -->
+    <div class="grid-center gap-2 mt-25">
+      <p-button label="Login with Apple ID" [rounded]="true">
+        <a href="#" class="apple-btn">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/3/31/Apple_logo_white.svg"
+            alt="Apple logo" /></a
+      ></p-button>
+    </div>
+  </p-card>
+</div>
